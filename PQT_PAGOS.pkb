@@ -1317,7 +1317,7 @@ IS
                                             descripcion_estado_fc -- Nuevo campo para la descripción del Estado U
                                         )
                                         WITH wt_pagos_tercero AS (
-                                            -- Similar a la consulta original, recuperación de datos necesarios
+                                           
                                         )
                                         SELECT 
                                             wpt.num_id_pago_tercero,
@@ -1327,7 +1327,7 @@ IS
                                             END) AS str_ciclo,
                                             mpi.reference_no AS str_nro_ref_fc,
                                            -- mpi.process_status AS descripcion_estado, -- Descripción para el Estado U
-                                            mpi.error_reason AS error_reason -- Nuevo campo para la descripción del error
+                                            mpi.error_reason AS error_reason 
                                         FROM 
                                             admsam.ptr_tbl_pctm_masspy_pymnt_inpt mpi,
                                             wt_pagos_tercero wpt
